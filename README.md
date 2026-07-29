@@ -3,9 +3,6 @@
 - composer install
 - cp .env.example .env && php artisan key:generate
 - php artisan serve
-
-Giải thích: `public/` là document root.
-
 ## Tien do MiniShop
 - [x] Route admin
 - [ ] Blade layout (P07)
