@@ -1,26 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiniShop Admin — Dashboard</title>
-</head>
-<body>
-    <h1>MiniShop Admin — Dashboard</h1>
-    <ul>
-        <li><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-        <li><a href="{{ route('admin.categories.index') }}">Categories</a></li>
-        <li><a href="{{ route('admin.products.index') }}">Products</a></li>
-        <li><a href="{{ route('admin.about') }}">About</a></li>
-    </ul>
+@extends('layouts.admin')
 
-    <hr>
-    <h2>Thống kê (Stats giả)</h2>
-    <p>3 / 8 / 41380000</p>
-    <ul>
-        <li>Số danh mục (Categories): {{ $stats['categories'] }}</li>
-        <li>Số sản phẩm (Products): {{ $stats['products'] }}</li>
-        <li>Tổng giá trị tồn kho (Inventory Value): {{ $stats['inventory_value'] }}</li>
-    </ul>
-</body>
-</html>
+@section('title', 'Dashboard')
+@section('page_heading', 'Dashboard')
+
+@section('content')
+<p>Chào mừng bạn đến với Admin MiniShop Dashboard.</p>
+
+<hr>
+<h2>Thống kê (Stats giả)</h2>
+<ul>
+    <li>Số danh mục (Categories): {{ $stats['categories'] }}</li>
+    <li>Số sản phẩm (Products): {{ $stats['products'] }}</li>
+    <li>Tổng giá trị tồn kho (Inventory Value): {{ $stats['inventory_value'] }}</li>
+</ul>
+@endsection
