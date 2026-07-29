@@ -16,10 +16,11 @@
 
     <hr>
     <h2>Thống kê (Stats giả)</h2>
+    <p>3 / 8 / 41380000</p>
     <ul>
         <li>Số danh mục (Categories): {{ $stats['categories'] }}</li>
         <li>Số sản phẩm (Products): {{ $stats['products'] }}</li>
-        <li>Tổng giá trị tồn kho (Inventory Value): {{ $stats['inventory_value'] }} VNĐ</li>
+        <li>Tổng giá trị tồn kho (Inventory Value): {{ $stats['inventory_value'] }}</li>
     </ul>
 </body>
 </html>

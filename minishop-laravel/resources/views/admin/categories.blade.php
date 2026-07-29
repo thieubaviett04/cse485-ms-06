@@ -7,6 +7,11 @@
 </head>
 <body>
     <h1>MiniShop Admin — Categories (sap xay dung)</h1>
-    <p><a href="{{ route('admin.dashboard') }}">Quay lại Dashboard</a></p>
+    <ul>
+        <li><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+        <li><a href="{{ route('admin.categories.index') }}">Categories</a></li>
+        <li><a href="{{ route('admin.products.index') }}">Products</a></li>
+        <li><a href="{{ route('admin.about') }}">About</a></li>
+    </ul>
 </body>
 </html>
