@@ -1,3 +1,13 @@
-# cse485-ms-06
+## Cai dat
+- PHP version …
+- composer install
+- cp .env.example .env && php artisan key:generate
+- php artisan serve
 
-Initial project structure.
+Giải thích: `public/` là document root.
+
+## Tien do MiniShop
+- [x] Route admin
+- [ ] Blade layout (P07)
+- [ ] Migration 2 bang (P08)
+- [ ] CRUD 2 bang (P12)
